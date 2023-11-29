@@ -1,0 +1,15 @@
+app:
+  name: tlandgraf-poi-gateway-app
+  namespace: tlandgraf
+  cluster: .apps.rosa-m9x67.dusy.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/rhdh23-lab/tlandgraf-gateway
+  org: rhdh23-lab
+  name: tlandgraf-gateway
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: tlandgraf/poi-gateway-app
+  tag: latest
